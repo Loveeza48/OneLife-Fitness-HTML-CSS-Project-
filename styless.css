@@ -1,0 +1,286 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    display: block;
+    align-self: self-start;
+}
+.logo img {
+    max-height: fit-content;
+    width: 50px;
+    height: 120px; 
+    border-radius: 50px; 
+    object-fit: cover; 
+    border: 2px solid #ccc; 
+    text-align: right;
+}
+
+:root {
+    --dark-purple: #2d1b3b;
+    --mid-purple: #553b60;
+    --light-purple: #806484;
+    --lavender: #c4b1c9;
+    --pale-pink: #e8d7df;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--pale-pink);
+    color: var(--dark-purple);
+    line-height: 1.6;
+}
+
+header {
+    background-color:black;
+    color: var(--pale-pink);
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+.trainers {
+    background-color:black;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.trainers h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #806484;
+}
+
+.trainer-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.trainer-item {
+    text-align: center;
+    margin: 10px;
+    width: 250px;
+}
+
+.trainer-item img {
+    width: 100%;
+    border-radius: 5%;
+    border: 3px solid #806484;
+    margin-bottom: 10px;
+}
+
+.trainer-item h3 {
+    color: #806484;
+    margin-bottom: 5px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+justify-se
+    
+    
+
+}
+header.logo img {
+    justify-self: start;
+    
+}
+header div {
+    justify-self: start;
+}
+
+.nav-links  {
+    text-align: right;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    text-align: right;
+}
+
+header ul li a {
+    color: var(--pale-pink);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-align: right;
+}
+ 
+header ul li a:hover {
+    color: var(--lavender);
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--dark-purple), var(--mid-purple));
+    color: var(--pale-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background: url('https://i.pinimg.com/474x/bb/9e/3d/bb9e3d1301a8226b2d9cb2334e858cd8.jpg');
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    padding: 0.8rem 2rem;
+    background-color: var(--pale-pink);
+    color: var(--dark-purple);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: var(--lavender);
+    transform: scale(1.1);
+}
+
+.about {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: var(--pale-pink);
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+.Location {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: var(--pale-pink);
+}
+.Location h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.Location p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+
+.services {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: var(--mid-purple);
+    color: var(--pale-pink);
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: var(--light-purple);
+    color: var(--dark-purple);
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.contact {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: var(--lavender);
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: var(--dark-purple);
+    color: var(--pale-pink);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.image .img{
+    width: 600%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 27%;
+   
+    transform: translateY(-50%);
+    z-index: 1; 
+}
+
+.content h1 {
+    font-size: 60px;
+    margin: 0;
+    font-family: cursive;
+}
+.content p {
+    font-size: 40px;
+    font-family: cursive;
+}
